@@ -13,6 +13,9 @@ event.preventDefault();
 const nome =
 document.getElementById("nome").value;
 
+const telefone =
+document.getElementById("telefone").value;
+
 const data =
 document.getElementById("data").value;
 
@@ -20,7 +23,7 @@ const item =
 document.createElement("li");
 
 item.innerHTML =
-`${nome} - ${data}
+`${nome} - ${telefone} - ${data}
 <button class="remover">
 Cancelar
 </button>`;
