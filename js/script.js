@@ -19,9 +19,21 @@ document.getElementById("data").value;
 const item =
 document.createElement("li");
 
-item.textContent =
-`${nome} - ${data}`;
+item.innerHTML =
+`${nome} - ${data}
+<button class="remover">
+Cancelar
+</button>`;
 
 lista.appendChild(item);
+
+const botao =
+item.querySelector(".remover");
+
+botao.addEventListener(
+"click",
+function(){
+item.remove();
+});
 
 });
